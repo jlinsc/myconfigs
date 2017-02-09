@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/JimmyLin/workspace/Projects/UTdataHack/datasets'
+let g:netrw_dirhist_2='/Users/JimmyLin/workspace/Projects/UTdataHack/scaled'
+let g:netrw_dirhist_3='/Users/JimmyLin/workspace/Projects/RecommenderSystem/Reports/Meeting'
+let g:netrw_dirhist_4='/Users/jimmy.lin/Workspace/Configs/vim'
+let g:netrw_dirhist_5='/Users/jimmy.lin/Workspace/Configs/vim/vim-fish'
+let g:netrw_dirhist_6='/Users/jimmy.lin/Pictures'
