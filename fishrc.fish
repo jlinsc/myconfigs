@@ -1,3 +1,4 @@
+set -g -x PATH '/opt/local/bin' $PATH
 ##----GIT------
 alias gs='clear ;and git status'
 alias gb='git branch'
