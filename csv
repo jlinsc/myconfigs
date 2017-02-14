@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ "$#" -ne 1 ]; then
+    echo "This is a shortcut program for the csv viewer 'csvtool' "
+    echo "Illegal number of parameters (Only one csv file at one time)"
+else 
+    csvtool readable $1 | view -
+fi

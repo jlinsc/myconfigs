@@ -1,8 +1,7 @@
 ## Environmental variables
-cur_path=$(shell pwd)
-vim_dir=$(cur_path)
+PWD=$(shell pwd)
 
-all: vim_install fish_install zsh_install
+all: vim_install zsh_install
 
 git_snap:
 	git config --global user.email "jlin@snapchat.com"
@@ -10,21 +9,27 @@ git_snap:
 
 ## install for vim
 vim_install:
-	ln -s $(vim_dir)/vim $(HOME)/.vim
-	ln -s $(vim_dir)/vimrc $(HOME)/.vimrc
+	ln -s $(PWD)/vim $(HOME)/.vim
+	ln -s $(PWD)/vimrc $(HOME)/.vimrc
 	chmod 755 $(HOME)/.vim
 	chmod 755 $(HOME)/.vimrc
 
 ## install for zsh 
 zsh_install:
 	wget --no-check-certificate http://install.ohmyz.sh -O - | sh
-	ln -s zshrc $(HOME)/.zshrc
+	ln -s $(PWD)/zshrc $(HOME)/.zshrc
 	chmod 755 $(HOME)/.zshrc
 
 ## install for fish
 fish_install:
 	ln -s fishrc.fish ~/.config/fish/config.fish
 	chmod 755 ~/.config/fish/config.fish
+
+## install for csv viewer
+csv_view_install:
+	sudo apt-get install csvtool # use port to install csvtool
+	ln -s $(PWD)/csv /usr/bin/csv
+
 
 ## remove all installed files
 clean:

@@ -54,7 +54,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/Users/JimmyLin/bin/mongodb:/Applications/Julia.app/Contents/Resources/julia/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/mysql/bin:/Users/JimmyLin/bin/mongodb:/Applications/Julia.app/Contents/Resources/julia/bin:/usr/local/go/bin:/usr/local/go/bin"
+export PATH="/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/Users/JimmyLin/bin/mongodb:/Applications/Julia.app/Contents/Resources/julia/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/Users/JimmyLin/bin/mongodb"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -238,15 +238,3 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 ## The following setting would be subject to the local configuration.
 #####################################################################
 
-# The next line sets up the PATH for the JAVA JRE 8
-export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home'
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/jimmy.lin/Workspace/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/jimmy.lin/Workspace/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/jimmy.lin/Workspace/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/jimmy.lin/Workspace/google-cloud-sdk/completion.zsh.inc'; fi
-
-
-# The next line sets up the PATH for the JAVA JRE 8
-export PATH=/Users/jimmy.lin/Workspace/hbase-1.2.1/bin:$PATH
